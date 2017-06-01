@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
+</head>
+
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+  <main>
+        {{ content }}
+  </main>
+  <footer class="page-footer">
+    {% include footer.html %}
+  </footer>
+
+  <!-- Scripts -->
+  <!-- JQuery 3.2.1 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Headroom 0.9.3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+  <!-- Materialize 0.98.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $(".button-collapse").sideNav();
+    var header = new Headroom(document.querySelector("#navigate"), {offset : 10, tolerance : 6});
+    header.init();
+  });
+  </script>
+</body>
+</html>

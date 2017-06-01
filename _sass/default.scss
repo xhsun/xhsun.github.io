@@ -1,0 +1,40 @@
+.logo-img{
+  background-image: url(../assets/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2.8em;
+  padding-bottom: 2.8em;
+  margin-left: 0.4em;
+  margin-top: 0.4em;
+}
+
+.github-img{
+  background-image: url(../assets/img/GitHub.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+  margin-top: 0.7em;
+  padding: 1.3em;
+}
+
+.headroom {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.headroom--top .link-item  {color: #e1f5fe;}
+.headroom--top .link-item:hover {color: #ffecb3;}
+.headroom--top .side-nav .link-item {color: #03a9f4;}
+.headroom--top .side-nav .link-item:hover {color: #ffb300;}
+.headroom--top .button-collapse i {color: #e1f5fe;}
+.headroom--unpinned {top: -200px;}
+.headroom--pinned {top: 0;}
+.headroom--not-top .link-item {color: #03a9f4;}
+.headroom--not-top .link-item:hover {color: #ffb300;}
+.headroom--not-top .button-collapse i {color: #03a9f4;}
+.headroom--not-top .nav-wrapper{background-color: rgba(225,245,254,0.70);}
