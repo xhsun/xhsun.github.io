@@ -6,7 +6,8 @@
       {% for s in site.data.sites %}
   			<li><a class="link-item" href="{{ s.url | prepend: site.url }}">{{ s.name }}</a></li>
   		{% endfor %}
-      <li><a class="github-img-holder" href="{{site.github}}" ><div class="github-img"></div></a></li>
+      <!-- <li><a class="github-img-holder" href="{{site.github}}" ><div class="github-img"></div></a></li> -->
+      <li><a class="github-img-holder" href="{{site.github}}" >{% octicon mark-github fill: "currentColor" height:38 class:"right left" aria-label:github %}</a></li>
     </ul>
     <ul class="side-nav" id="mobile-nav">
       {% for s in site.data.sites %}

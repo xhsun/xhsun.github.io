@@ -37,6 +37,7 @@ defaults:
 
 gems:
   - jekyll-feed
+  - jekyll-octicons
 
 exclude:
   - Gemfile

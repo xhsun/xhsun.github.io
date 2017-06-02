@@ -12,6 +12,7 @@
   margin-left: -0.2em;
 margin-top: 1.85em;
 margin-right: 15px;
+color: #e1f5fe;
 }
 
 .github-img{
@@ -32,17 +33,25 @@ margin-right: 15px;
 	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
-.headroom--top .link-item  {color: #e1f5fe;}
-.headroom--top .link-item:hover {color: #ffecb3;}
-.headroom--top .side-nav .link-item {color: #03a9f4;}
-.headroom--top .side-nav .link-item:hover {color: #ffb300;}
-.headroom--top .button-collapse i {color: #e1f5fe;}
+
 .headroom--unpinned {top: -200px;}
 .headroom--pinned {top: 0;}
-.headroom--not-top .link-item {color: #03a9f4;}
-.headroom--not-top .link-item:hover {color: #ffb300;}
-.headroom--not-top .button-collapse i {color: #03a9f4;}
-.headroom--not-top .nav-wrapper{background-color: rgba(225,245,254,0.70);}
+.headroom--top{
+  .link-item, .github-img-holder  {color: #e1f5fe;}
+  .link-item:hover {color: #ffecb3;}
+  .side-nav{
+    .link-item {color: #03a9f4;}
+    .link-item:hover {color: #ffb300;}
+  }
+  .button-collapse i {color: #e1f5fe;}
+}
+
+.headroom--not-top{
+  .link-item, .github-img-holder {color: #03a9f4;}
+  .link-item:hover {color: #ffb300;}
+  .button-collapse i {color: #03a9f4;}
+  .nav-wrapper{background-color: rgba(225,245,254,0.70);}
+} 
 
 .parallax-txt-section {
 	z-index: 1;
