@@ -37,8 +37,8 @@ defaults:
 
 gems:
   - jekyll-feed
-  - jekyll-octicons
   - jekyll-sitemap
+  # - jekyll-octicons
 
 exclude:
   - Gemfile
