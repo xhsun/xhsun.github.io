@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div style="height:100vh;" class="parallax-container">
+  <div class="parallax">
+    <div class="parallax-txt-section valign-wrapper">
+      <div id="intro" class="container valign">
+        <div class="row"><h3 class="col offset-s4">Hi,</h3></div>
+        <div class="row"><h2 class="col offset-s5">I&#39;m Hannah</h2></div>
+        <div class="row"><h4 class="col offset-s5">I love <span id="intro-code">coding</span> and <span id="intro-design">designing</span></h4></div>
+      </div>
+    </div>
+    <img src="{{ page.header_image | prepend: site.image | prepend: site.url }}">
+  </div>
+</div>
+
+<section class="parallax-section grey lighten-5">
+  <h5 class="container blue-grey-text">{{ page.description }}</h5>
+</section>
+{% for p in site.data.index_content %}
+<div class="parallax-container">
+<div class="parallax">
+  <div class="parallax-txt-section valign-wrapper">
+    <div class="container valign">
+      <h3 class="{{p.type}} center-align">{{p.title}}</h3>
+    </div>
+  </div>
+  <img src="{{ p.img | prepend: site.image | prepend: site.url }}">
+</div>
+</div>
+
+<section class="parallax-section grey darken-4">
+  <h6 class="container center-align" style="font-size: 1.2rem;">{{p.desc}}</h6>
+</section>
+{% endfor %}
+
+  <div class="parallax-container clickable-parallax">
+    <div class="parallax">
+      <img src="{{ page.clickable_image | prepend: site.image | prepend: site.url }}">
+    </div>
+    <div class="parallax-txt-section valign-wrapper">
+      <div class="container valign center-align">
+        <a href="{{ page.clickable_link | prepend: site.url }}">{{ page.clickable_title }}</a>
+      </div>
+    </div>
+  </div>

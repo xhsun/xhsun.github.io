@@ -1,0 +1,60 @@
+#intro h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #F2FAFE;
+	font-weight: 600;
+}
+#intro h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Allura;
+	color: #F2FAFE;
+	font-size: 50pt;
+}
+#intro h4 {
+	margin-top: -1em;
+	color: #F2FAFE;
+	margin-bottom: 0px;
+	font-size: 22pt;
+}
+#intro #intro-code {
+	font-family: Geo;
+	font-size: 29pt;
+}
+#intro #intro-design {
+	font-family: Yeseva One;
+	font-size: 24pt;
+}
+
+.parallax-section {
+	padding-top: 4em;
+	padding-bottom: 4em;
+	color: #e1f5fe;
+}
+
+.plain {
+  font-weight: 700;
+	font-size: 50pt;
+	color: #212121;
+}
+
+.yeseva {
+	font-family: Yeseva One;
+  font-size: 50pt;
+	color: #212121;
+}
+
+.geo {
+	color: #F2FAFE;
+	font-family: Geo;
+	font-size: 55pt;
+}
+
+.clickable-parallax a {
+	color: #616161;
+	font-weight: 700;
+	font-size: 50pt;
+}
+.clickable-parallax a:hover {
+	color: #ffc400;
+}

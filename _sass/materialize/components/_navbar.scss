@@ -26,7 +26,7 @@ nav {
     font-family: Nova Mono;
   	font-style: normal;
   	font-weight: 400;
-  	margin-top: 1.8em;
+  	// margin-top: 1.8em;
   }
 
   i,
@@ -55,16 +55,17 @@ nav {
     z-index: 1;
     height: $navbar-height-mobile;
     margin: 0 18px;
+    margin-top: 1.8em;
 
     i {
-      height: $navbar-height-mobile;
-      line-height: $navbar-line-height-mobile;
+      font-size: 24pt;
+      height: $navbar-height-mobile !important;
+      line-height: 1.8em !important;
     }
   }
 
   .button-collapse i {
   	cursor: pointer;
-  	margin-top: 0.4em;
   }
 
   // Logo
