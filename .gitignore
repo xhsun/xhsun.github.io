@@ -2,7 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
-# Gemfile
+Gemfile
 _sass/materialize/components/date_picker/
 _sass/materialize/components/forms/
 _sass/materialize/_mixins.scss

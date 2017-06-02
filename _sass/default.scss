@@ -9,7 +9,7 @@ hr {
 }
 
 .logo-img{
-  background-image: url(../assets/img/logo.png);
+  background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding-left: 2.8em;
@@ -20,16 +20,9 @@ hr {
 
 .github-img-holder{
   margin-left: -0.2em;
-margin-top: 1.85em;
-margin-right: 15px;
-color: #e1f5fe;
-}
-
-.github-img{
-  background-image: url(../assets/img/GitHub.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-  padding: 1em;
+	margin-top: 1.85em;
+	margin-right: 15px;
+	color: #e1f5fe;
 }
 
 .headroom {
