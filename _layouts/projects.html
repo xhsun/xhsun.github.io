@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="parallax-container">
+  <div class="parallax">
+    <div class="parallax-txt-section valign-wrapper">
+      <div class="container valign">
+        <h3 class="project-title center-align">{{page.desc}}</h3>
+      </div>
+    </div>
+    <img src="{{ page.img | prepend: site.image | prepend: site.url }}">
+  </div>
+</div>
+{% for p in site.data.projects %}
+<div class="project container" style="margin-bottom: 1em;">
+  <h4>{{p.period}}</h4>
+  <hr>
+  {% for i in p.content %}
+  <a class="waves-effect" href="{{i.link | prepend: site.url}}"><div class="project-item">
+    <h5>{{i.title}}</h5>
+    <h6>{{i.env}}</h6>
+  </div></a>
+  {% if forloop.last != true %}
+    <div class="divider"></div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endfor %}

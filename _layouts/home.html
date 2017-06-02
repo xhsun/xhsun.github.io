@@ -18,20 +18,20 @@ layout: default
 <section class="parallax-section grey lighten-5">
   <h5 class="container blue-grey-text">{{ page.description }}</h5>
 </section>
-{% for p in site.data.index_content %}
+{% for c in site.data.index_content %}
 <div class="parallax-container">
 <div class="parallax">
   <div class="parallax-txt-section valign-wrapper">
     <div class="container valign">
-      <h3 class="{{p.type}} center-align">{{p.title}}</h3>
+      <h3 class="{{c.type}} center-align">{{c.title}}</h3>
     </div>
   </div>
-  <img src="{{ p.img | prepend: site.image | prepend: site.url }}">
+  <img src="{{ c.img | prepend: site.image | prepend: site.url }}">
 </div>
 </div>
 
 <section class="parallax-section grey darken-4">
-  <h6 class="container center-align" style="font-size: 1.2rem;">{{p.desc}}</h6>
+  <h6 class="container center-align" style="font-size: 1.2rem;">{{c.desc}}</h6>
 </section>
 {% endfor %}
 
