@@ -1,0 +1,59 @@
+.post-start{
+  margin-top: 8em;
+  h4 {
+    margin-left: 0.5em;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 0px;
+   }
+  h5 {
+    color: #424242;
+   	margin-bottom: 0px;
+   	font-size: xx-large;
+  }
+  h6 {
+    color: #bdbdbd;
+  	margin-left: 1.4em;
+  	margin-top: 0px;
+  	font-weight: 500;
+  }
+  article h6 {
+    color: #616161;
+  	font-size: x-large;
+  	margin-left: 0px;
+  	font-weight: 400;
+  	margin-top: 10px;
+  }
+  article hr {
+    background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0.00) 2.07%,rgba(117,117,117,0.76) 47.15%,rgba(255,255,255,0.00) 100%);
+  	background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0.00) 2.07%,rgba(117,117,117,0.76) 47.15%,rgba(255,255,255,0.00) 100%);
+  	background-image: -o-linear-gradient(0deg,rgba(255,255,255,0.00) 2.07%,rgba(117,117,117,0.76) 47.15%,rgba(255,255,255,0.00) 100%);
+  	background-image: linear-gradient(90deg,rgba(255,255,255,0.00) 2.07%,rgba(117,117,117,0.76) 47.15%,rgba(255,255,255,0.00) 100%);
+  }
+}
+
+.post-divider {
+  height: 1px;
+  overflow: hidden;
+	background-color: rgba(255,179,0,0.18);
+}
+
+.gif-container{
+  margin-top: 2em;
+}
+
+#top-side{
+  .section a {
+    color: #9e9e9e;
+  	font-weight: 500;
+  	font-size: 12pt;
+  }
+  .section a:hover  { color: #ffb300; }
+  .btn-large {
+    width: 90%;
+  	font-weight: 600;
+  	font-size: 15pt;
+  }
+}
+
+#side { margin-top: 8em; }

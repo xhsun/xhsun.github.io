@@ -1,0 +1,72 @@
+---
+layout: default
+permalink: /projects/{{page.raw-title}}
+---
+
+<section class="post-start row">
+  <h4>{{page.raw-title}}</h4>
+  <h6>{{ page.date | date: '%B %d, %Y' }}</h6>
+  <hr>
+  <section id="top-side" class="hide-on-large-only center-align">
+    <ul class="section">
+      <div class="post-divider"></div>
+      {% for s in page.sections %}
+      <li><a href="#{{s.tag}}">{{s.name}}</a></li>
+      {% endfor %}
+      <div class="post-divider"></div>
+    </ul>
+    {% if page.downloadLink %}
+    <div><a class=" btn-large" href="{{page.downloadLink}}">Download</a></div>
+    {% endif %}
+  </section>
+  <section class="col l9 m12 s12">
+    {% for s in page.sections %}
+    <article class="scrollspy" id="{{s.tag}}">
+      <h5>{{s.name}}</h5>
+      <div class="post-divider"></div>
+      {% if s.content %}
+        {% for c in s.content %}
+        <p>{{c}}</p>
+        {% endfor %}
+      {% elsif s.subContent %}
+      <!-- TODO sub-contents -->
+      {% endif %}
+      {% if s.images %}
+      <div class="container row">
+          {% for i in s.images %}
+          <div class="col s4"><div class="card"><div class="card-image materialboxed">
+            <img src="{{i.url | prepend: site.image | prepend: site.url}}">
+            <span class="card-title">{{i.name}}</span>
+          </div></div></div>
+          {% endfor %}
+      </div>
+      {% elsif s.gifs %}
+      <div class="gif-container row">
+        {% for g in s.gifs %}
+        <div class="col m4 s12">
+          <img class="responsive-img" src="{{g | prepend: site.image | prepend: site.url}}"></div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+
+  <section id="slide-holder" class="hide-on-med-and-down col l3">
+    <div id="side">
+      <ul class="section table-of-contents">
+        {% for s in page.sections %}
+        <li><a href="#{{s.tag}}">{{s.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</section>
+
+<style type="text/css">
+body {background-color: #fafdff;}
+.headroom--top .github-img-holder { color: #03a9f4; }
+.headroom--top .link-item { color: #03a9f4; }
+.headroom--top .link-item:hover { color: #ffb300; }
+.headroom--top .button-collapse i {color: #03a9f4;}
+</style>

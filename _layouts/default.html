@@ -27,8 +27,10 @@
   $( document ).ready(function() {
     $('.parallax').parallax();
     $(".button-collapse").sideNav();
+    $('.scrollspy').scrollSpy();
     var header = new Headroom(document.querySelector("#navigate"), {offset : 10, tolerance : 6});
     header.init();
+    $('#side').pushpin({top: $('#slide-holder').offset().top});
   });
   </script>
 </body>
