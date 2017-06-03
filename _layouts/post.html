@@ -44,7 +44,8 @@ permalink: /projects/{{page.raw-title}}
       <div class="gif-container row">
         {% for g in s.gifs %}
         <div class="col m4 s12">
-          <img class="responsive-img" src="{{g | prepend: site.image | prepend: site.url}}"></div>
+          <img class="responsive-img" src="{{g | prepend: site.image | prepend: site.url}}">
+        </div>
         {% endfor %}
       </div>
       {% elsif s.videos %}
