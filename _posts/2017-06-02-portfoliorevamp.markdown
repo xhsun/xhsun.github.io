@@ -24,8 +24,8 @@ sections:
         url: "projects/revamp/old_project.png"
   - tag: video
     name: Video Demonstration
-    gifs:
-      - "projects/revamp/indexCompare.gif"
-      - "projects/revamp/projectsCompare.gif"
-      - "projects/revamp/projectCompare.gif"
+    videos:
+      - "https://www.youtube.com/embed/w90Oz2aYMnU"
+      - "https://www.youtube.com/embed/ntPT9NyZ-EA"
+      - "https://www.youtube.com/embed/8z2pbsc60TU"
 ---
