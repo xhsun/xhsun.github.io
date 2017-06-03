@@ -1,3 +1,26 @@
+/*Preloader*/
+#preload {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	z-index: 9999;
+	background-color: #e1f5fe;
+}
+#progress-logo {
+	background-image: url(../img/logo.png);
+	background-position: center center;
+	background-size: contain;
+	height: 120px;
+	background-repeat: no-repeat;
+	width: 120px;
+	display: block;
+	margin-bottom: 2em;
+}
+
 hr {
 	border: 0;
 	height: 1px !important;
@@ -39,14 +62,9 @@ hr {
 
 .headroom--unpinned {top: -200px;}
 .headroom--pinned {top: 0;}
-.headroom--top{
-  .link-item, .github-img-holder  {color: #e1f5fe;}
-  .link-item:hover {color: #ffecb3;}
-  .side-nav{
+.headroom--top .side-nav{
     .link-item {color: #03a9f4;}
     .link-item:hover {color: #ffb300;}
-  }
-  .button-collapse i {color: #e1f5fe;}
 }
 
 .headroom--not-top{

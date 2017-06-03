@@ -18,15 +18,24 @@ sections:
       - The old projects page was colorful indeed, but it is very hard to view it without wanting to drink some bleach. I decide to tune down on the color and use something more simple. Thus the simple list to list out all the projects ordered by year without using the crazy color to differentiate different projects. As for page of each individual project, I actually have nothing bad to say about it, except the horrible font. Therefore, I keep the design of the individual project page, only with some minor changes to fit the new style.
     images:
       - name: Original Index Page
+        size: 4
+        clickable: true
         url: "projects/revamp/old_index.png"
       - name: Original Projects Page
+        size: 4
+        clickable: true
         url: "projects/revamp/old_projects.png"
       - name: Original Project Page
+        size: 4
+        clickable: true
         url: "projects/revamp/old_project.png"
   - tag: video
     name: Video Demonstration
     videos:
-      - "https://www.youtube.com/embed/w90Oz2aYMnU"
-      - "https://www.youtube.com/embed/ntPT9NyZ-EA"
-      - "https://www.youtube.com/embed/8z2pbsc60TU"
+      - url: "https://www.youtube.com/embed/w90Oz2aYMnU"
+        size: 4
+      - url: "https://www.youtube.com/embed/ntPT9NyZ-EA"
+        size: 4
+      - url: "https://www.youtube.com/embed/8z2pbsc60TU"
+        size: 4
 ---

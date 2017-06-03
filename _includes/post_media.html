@@ -1,0 +1,35 @@
+{% assign data={{include.content}} %}
+{% if data.images %}
+<div class="container row">
+    {% for i in data.images %}
+    <div class="col s{{i.size}}"><div class="card">
+      {% if i.clickable %}
+      <div class="card-image materialboxed">
+      {% else %}
+      <div class="card-image">
+      {% endif %}
+        <img src="{{i.url | prepend: site.image | prepend: site.url}}">
+        {% if i.name %}
+        <span class="card-title">{{i.name}}</span>
+        {% endif %}
+      </div>
+    </div></div>
+    {% endfor %}
+</div>
+{% elsif data.gifs %}
+<div class="gif-container row">
+  {% for g in data.gifs %}
+  <div class="col m{{g.size}} s12">
+    <img class="responsive-img" src="{{g.url | prepend: site.image | prepend: site.url}}">
+  </div>
+  {% endfor %}
+</div>
+{% elsif data.videos %}
+<div class="row">
+  {% for v in data.videos %}
+  <div class="col m{{v.size}} s12 {{v.offset}}"><div class="video-container">
+    <iframe frameborder="0" allowfullscreen src="{{v.url}}"></iframe>
+  </div></div>
+  {% endfor %}
+</div>
+{% endif %}

@@ -1,5 +1,7 @@
 ---
 layout: default
+mainColor: "#03a9f4"
+accentColor: "#ffb300"
 permalink: /projects/{{page.raw-title}}
 ---
 
@@ -29,34 +31,26 @@ permalink: /projects/{{page.raw-title}}
         <p>{{c}}</p>
         {% endfor %}
       {% elsif s.subContent %}
-      <!-- TODO sub-contents -->
-      {% endif %}
-      {% if s.images %}
-      <div class="container row">
-          {% for i in s.images %}
-          <div class="col s4"><div class="card"><div class="card-image materialboxed">
-            <img src="{{i.url | prepend: site.image | prepend: site.url}}">
-            <span class="card-title">{{i.name}}</span>
-          </div></div></div>
-          {% endfor %}
-      </div>
-      {% elsif s.gifs %}
-      <div class="gif-container row">
-        {% for g in s.gifs %}
-        <div class="col m4 s12">
-          <img class="responsive-img" src="{{g | prepend: site.image | prepend: site.url}}">
-        </div>
+        {% for c in s.subContent %}
+          {% if c.name %}
+          <h6>{{c.name}}</h6>
+          <hr>
+          {% endif %}
+          {% if c.content %}
+            {% if c.isContentContained %}
+            <div class="container">
+            {% else %}
+            <div>
+            {% endif %}
+            {% for p in c.content %}
+              <p>{{p}}</p>
+            {% endfor %}
+            </div>
+          {% endif %}
+          {% include post_media.html content=c %}
         {% endfor %}
-      </div>
-      {% elsif s.videos %}
-      <div class="row">
-        {% for v in s.videos %}
-        <div class="col m4 s12"><div class="video-container">
-          <iframe frameborder="0" allowfullscreen src="{{v}}"></iframe>
-        </div></div>
-        {% endfor %}
-      </div>
       {% endif %}
+      {% include post_media.html content=s %}
     </article>
     {% endfor %}
   </section>
@@ -75,11 +69,3 @@ permalink: /projects/{{page.raw-title}}
     </div>
   </section>
 </section>
-
-<style type="text/css">
-body {background-color: #fafdff;}
-.headroom--top .github-img-holder { color: #03a9f4; }
-.headroom--top .link-item { color: #03a9f4; }
-.headroom--top .link-item:hover { color: #ffb300; }
-.headroom--top .button-collapse i {color: #03a9f4;}
-</style>

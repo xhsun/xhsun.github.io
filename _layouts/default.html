@@ -3,14 +3,27 @@
 <head>
   {% include head.html %}
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.url }}">
+  <style type="text/css">
+  .headroom--top .link-item, .headroom--top .github-img-holder { color: {{layout.mainColor}}; }
+  .headroom--top .link-item:hover { color: {{ layout.accentColor }}; }
+  .headroom--top .button-collapse i {color: {{ layout.mainColor }};}
+  </style>
 </head>
 
 <body>
+  <div id="preload" align="center" class="valign-wrapper">
+		<div class="valign" style="width:100%;">
+			<div id="progress-logo"></div>
+			<div class="progress">
+				<div class="indeterminate"></div>
+			</div>
+		</div>
+	</div>
   <header>
     {% include header.html %}
   </header>
   <main>
-        {{ content }}
+    {{ content }}
   </main>
   <footer class="page-footer">
     {% include footer.html %}
@@ -23,6 +36,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
   <!-- Materialize 0.98.2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="{{"/assets/js/preloader.js" | prepend: site.url}}"></script>
   <script type="text/javascript">
   $( document ).ready(function() {
     $('.parallax').parallax();
