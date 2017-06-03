@@ -2,7 +2,11 @@
 {% if data.images %}
 <div class="container row">
     {% for i in data.images %}
-    <div class="col s{{i.size}}"><div class="card">
+      {% if i.mobileSize %}
+      <div class="col m{{i.size}} s{{i.mobileSize}}"><div class="card">
+      {% else %}
+      <div class="col s{{i.size}}"><div class="card">
+      {% endif %}
       {% if i.clickable %}
       <div class="card-image materialboxed">
       {% else %}
@@ -25,7 +29,11 @@
   {% endfor %}
 </div>
 {% elsif data.videos %}
-<div class="row">
+  {% if data.isContentContained %}
+  <div class="container row">
+  {% else %}
+  <div class="row">
+  {% endif %}
   {% for v in data.videos %}
   <div class="col m{{v.size}} s12 {{v.offset}}"><div class="video-container">
     <iframe frameborder="0" allowfullscreen src="{{v.url}}"></iframe>

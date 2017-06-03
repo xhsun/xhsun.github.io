@@ -2,7 +2,8 @@
 layout: post
 raw-title: "The &#60;joe&#62; Button"
 title: "Hannah Sun - The &#60;joe&#62; Button"
-date: "2017-06-03 12:21:07 -0600"
+date: "2015-09-25 12:21:07 -0600"
+last_modified_at: "2017-06-03 12:21:07 -0600"
 permalink: /projects/2015-2016/theJoeButton/
 sourceLink: "https://bitbucket.org/xhsun/thejoebutton"
 sections:

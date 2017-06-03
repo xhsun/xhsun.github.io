@@ -6,14 +6,14 @@
 - period: 2015 - 2016
   content:
     - title: The Proxemic Display
-      env: tbd
-      link: "/projects/#"
+      env: "C#, Kinect, Visual Studio"
+      link: "/projects/2015-2016/proxemicDisplay/"
     - title: Physically Augmenting Mobile Devices
-      env: tbd
-      link: "/projects/#"
+      env: "C#, Makey Makey, Visual Studio"
+      link: "/projects/2015-2016/augmentingMobile/"
     - title: Smart Phone Interaction Workarounds
-      env: tbd
-      link: "/projects/#"
+      env: "C#, Visual Studio"
+      link: "/projects/2015-2016/interactionWorkaround/"
     - title: The &#60;joe&#62; Button
       env: "C#, Visual Studio"
       link: "/projects/2015-2016/theJoeButton/"
