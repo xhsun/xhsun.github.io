@@ -15,8 +15,8 @@ permalink: /projects/{{page.raw-title}}
       {% endfor %}
       <div class="post-divider"></div>
     </ul>
-    {% if page.downloadLink %}
-    <div><a class=" btn-large" href="{{page.downloadLink}}">Download</a></div>
+    {% if page.sourceLink %}
+    <div><a class="gold-btn btn-large" href="{{page.sourceLink}}">Source</a></div>
     {% endif %}
   </section>
   <section class="col l9 m12 s12">
@@ -68,6 +68,10 @@ permalink: /projects/{{page.raw-title}}
         <li><a href="#{{s.tag}}">{{s.name}}</a></li>
         {% endfor %}
       </ul>
+      {% if page.sourceLink %}
+      <div><a class="gold-btn side-btn btn" href="{{page.sourceLink}}">Source</a></div>
+      {% endif %}
+
     </div>
   </section>
 </section>

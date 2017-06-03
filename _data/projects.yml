@@ -1,7 +1,7 @@
 - period: 2016 - 2017
   content:
     - title: Portfolio Revamp
-      env: tbd
+      env: HTML5, CSS, Jekyll
       link: "/projects/2016-2017/portfolioRevamp/"
 - period: 2015 - 2016
   content:

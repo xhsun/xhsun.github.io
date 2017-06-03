@@ -4,6 +4,7 @@ raw-title: "Portfolio Revamp"
 title: "Hannah Sun - Portfolio Revamp"
 date: "2017-06-02 19:22:04 -0600"
 permalink: /projects/2016-2017/portfolioRevamp/
+sourceLink: "https://github.com/xhsun/xhsun.github.io"
 sections:
   - tag: motive
     name: Motivation
