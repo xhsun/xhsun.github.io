@@ -15,8 +15,6 @@ header_font: "css?family=Nova+Mono"
 all_font: "css?family=Allura|Geo|Nova+Mono|Yeseva+One"
 
 # Build settings
-theme: minima
-
 sass:
   sass_dir: _sass
   style: compressed

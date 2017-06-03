@@ -35,7 +35,7 @@ sections:
             name: Refinement
       - name: Prototype
         content:
-          -To unlock phone, user need to combine color in the correct order. In this example, the correct combination is pink to green then pink to orange then orange to blue. When a wrong combination is given, the phone will vibrate and clear the canvas.
+          - To unlock phone, user need to combine color in the correct order. In this example, the correct combination is pink to green then pink to orange then orange to blue. When a wrong combination is given, the phone will vibrate and clear the canvas.
         isContentContained: true
         images:
           - url: projects/unlock/touch_init.png
