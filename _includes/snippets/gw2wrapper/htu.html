@@ -1,0 +1,33 @@
+<i>Note: when using this library in Android application make sure to require internet permission</i>
+{% highlight xml %}
+<uses-permission android:name="android.permission.INTERNET"/>
+{% endhighlight %}
+
+First of all, you need to get GuildWars2 object by calling:
+{% highlight java %}
+GuildWars2.getInstance();
+{% endhighlight %}
+
+Use methods in <span class="highlight">SynchronousRequest</span> class to get the content synchronously, which can be accessed by calling <span class="highlight">getSynchronous()</span> function in <span class="highlight">GuildWars2</span> class. For instance, to get content of item <a href="https://api.guildwars2.com/v2/items?ids=12452,28445">12452 and 28445</a> synchronously&#58;<br/>
+{% highlight java %}
+GuildWars2 api = GuildWars2.getInstance();
+int[] ids = new int[]{12452, 28445};
+List<Item> result = api.getSynchronous().getItemInfo(ids);
+//more amazing codes
+{% endhighlight %}
+Use methods in <span class="highlight">AsynchronousRequest</span> class to process you the content asynchronously, which can be accessed by calling <span class="highlight">getAsynchronous()</span> function in <span class="highlight">GuildWars2</span> class. For instance, to process content of item <a href="https://api.guildwars2.com/v2/items?ids=12452,28445">[12452 and 28445</a> asynchronously:
+{% highlight java %}
+GuildWars2 api = GuildWars2.getInstance();
+int[] ids = new int[]{12452, 28445};
+api.getAsynchronous().getItemInfo(ids, new Callback<List<Item>>() {
+  @Override
+  public void onResponse(Call<List<Item>> call, Response<List<Item>> response) {
+    //more amazing codes
+  }
+
+  @Override
+  public void onFailure(Call<List<Item>> call, Throwable t) {
+    //handle failure
+  }
+});
+{% endhighlight %}

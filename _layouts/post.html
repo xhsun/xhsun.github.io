@@ -47,6 +47,15 @@ permalink: /projects/{{page.raw-title}}
             {% endfor %}
             </div>
           {% endif %}
+          {% if c.specialContent %}
+          {% if c.isContentContained %}
+          <div class="container">
+          {% else %}
+          <div>
+          {% endif %}
+          {% include snippets/{{c.specialContent}} %}
+          </div>
+          {% endif %}
           {% include post_media.html content=c %}
         {% endfor %}
       {% endif %}

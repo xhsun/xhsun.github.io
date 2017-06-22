@@ -1,5 +1,8 @@
 - period: 2016 - 2017
   content:
+    - title: Guild Wars 2 API Wrapper Library
+      env: Java, Retrofit, Gson, IntelliJ
+      link: "/projects/2016-2017/gw2wrapper/"
     - title: Portfolio Revamp
       env: HTML5, CSS, Jekyll
       link: "/projects/2016-2017/portfolioRevamp/"
