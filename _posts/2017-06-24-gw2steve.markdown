@@ -1,0 +1,102 @@
+---
+layout: post
+raw-title: "Guild Wars 2 Steve"
+title: "Hannah Sun - Guild Wars 2 Steve"
+date: "2017-06-24 11:02:08 -0600"
+permalink: /projects/2016-2017/gw2steve/
+sourceLink: "https://github.com/xhsun/gw2-steve"
+s-img-size: &s-img-size
+  - 2
+sections:
+  - tag: motive
+    name: Motivation
+    content:
+      - I&#39;ve been playing Guild Wars 2 since the first day of release, which just so happens to be my first day of university. Now that I graduated from the university, I want to do something nice to the community that&#39;ve always been a part of that journey. Since I major in computer science, I think it would be the best that I make a program, using the skills I learned from my university, for Guild Wars 2. I decided that my program will be an android application so that the program will not take up screen space on user&#39;s computer.
+      - Since Guild Wars 2 released its first expansion, the base game becomes free to play. I know multiple people including myself that have multiple accounts because of that. However, managing resource between accounts aren&#39;t exactly easy and multi-boxing isn&#39;t supported by the game. Thus, I decided that my application will provide a way for users to view what resources do they have on each Guild wars 2 accounts they own.
+      - But I feel like just the feature mentioned above doesn&#39;t provide much to the user, thus I want to add more features to my application. So, I looked at some popular fan-made web-based tools and see if there is anything I can include. However, some of the features requires a dedicated server. Yet, I don&#39;t exactly have the resource to provide such server. Thus, I decided to only include boss timer, dungeon tracker, and build template for now.
+      - Done deciding what to include for my application, I need a name for it. So, I named it Steve, after the Guild Wars 2&#39;s mysterious water-base elder dragon (well&#8230; Steve is a name given to that elder dragon by the Guild Wars 2 community).
+  - tag: demo
+    name: Demonstration
+    subContent:
+    - content:
+      - This application is still in development. In the future, there should be more features than what is shown.
+    - name: Add New Account
+      content:
+        - User can click on floating action button to add new Guild Wars 2 account to the app. If the API key provided does not meet requirement, an error will be shown to the user.
+      images:
+        - url: projects/steve/acc1.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/add_acc2.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/add_acc3.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/add_acc4.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/acc5.png
+          clickable: false
+          size: *s-img-size
+      gifs:
+        - url: //i.imgur.com/hwWiRFY.gif
+          size: *s-img-size
+    - name: Search Official Wiki
+      content:
+        - User can click on search wiki button in the drawer to search things on the official Guild Wars 2 wiki.
+      images:
+        - url: projects/steve/wiki1.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/wiki2.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/wiki3.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/wiki4.png
+          clickable: false
+          size: *s-img-size
+      gifs:
+        - url: //i.imgur.com/cMRBjj6.gif
+          size: *s-img-size
+    - name: View Wallet(s)
+      content:
+        - User can click on wallet in the drawer to open a page that give an overview of user’s resources across all registered Guild Wars 2 accounts. Click on each currency will give a detail break down.
+      images:
+        - url: projects/steve/wallet1.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/wallet2.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/wallet3.png
+          clickable: false
+          size: *s-img-size
+      gifs:
+        - url: //i.imgur.com/qU60f12.gif
+          size: *s-img-size
+    - name: View Character Inventory
+      content:
+        - User can click on Inventory in the drawer to open a page that shows what is in each character’s inventory for all registered Guild Wars 2 accounts. User can click on floating action button to hide or show characters/accounts. User can also use the search to find item that match given inputs in the characters’ inventory.
+      images:
+        - url: projects/steve/inv1.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/inv2.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/inv3.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/inv4.png
+          clickable: false
+          size: *s-img-size
+        - url: projects/steve/inv5.png
+          clickable: false
+          size: *s-img-size
+      gifs:
+        - url: //i.imgur.com/qD3GkVE.gif
+          size: *s-img-size
+---

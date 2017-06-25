@@ -19,14 +19,13 @@
       </div>
     </div></div>
     {% endfor %}
-</div>
-{% elsif data.gifs %}
-<div class="gif-container row">
-  {% for g in data.gifs %}
-  <div class="col m{{g.size}} s12">
-    <img class="responsive-img" src="{{g.url | prepend: site.image | prepend: site.url}}">
-  </div>
-  {% endfor %}
+    {% if data.gifs %}
+    {% for g in data.gifs %}
+    <div class="col m{{g.size}} s12" style="margin-top:0.5em;">
+      <img class="responsive-img" src="{{g.url}}">
+    </div>
+    {% endfor %}
+    {% endif %}
 </div>
 {% elsif data.videos %}
   {% if data.isContentContained %}
