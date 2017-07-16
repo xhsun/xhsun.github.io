@@ -22,7 +22,9 @@
     {% if data.gifs %}
     {% for g in data.gifs %}
     <div class="col m{{g.size}} s12" style="margin-top:0.5em;">
-      <img class="load-later responsive-img" src="{{g.url}}">
+      <noscript class="load-later">
+        <img class="responsive-img" src="{{g.url}}">
+      </noscript>
     </div>
     {% endfor %}
     {% endif %}
@@ -35,7 +37,9 @@
   {% endif %}
   {% for v in data.videos %}
   <div class="col m{{v.size}} s12 {{v.offset}}"><div class="video-container">
-    <iframe class="load-later" frameborder="0" allowfullscreen src="{{v.url}}"></iframe>
+    <noscript class="load-later">
+      <iframe frameborder="0" allowfullscreen src="{{v.url}}"></iframe>
+    </noscript>
   </div></div>
   {% endfor %}
 </div>
