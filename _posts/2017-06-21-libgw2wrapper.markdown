@@ -18,6 +18,6 @@ sections:
         - This library grants user access to Guild Wars 2 HTTP API without the need to implement any underlying structures. The library uses Retrofit 2 as a HTTP client to connect with the API and JSON reply from the API is parsed using Gson converter.
       - name: How To Use
         specialContent: gw2wrapper/htu.html
-      - name: Data Classe
+      - name: Data Classes
         specialContent: gw2wrapper/dc.html
 ---
