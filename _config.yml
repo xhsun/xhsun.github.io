@@ -2,7 +2,7 @@ title: Hannah Sun
 description: Hannah Sun's portfolio
 email: xhsun@mail.xhsun.me
 
-url: "http://www.xhsun.me"
+url: "https://www.xhsun.me"
 # url: "https://localhost:4000"
 baseurl: ""
 
@@ -21,7 +21,7 @@ sass:
   style: compressed
 
 # Conversion
-markdown:    kramdown
+markdown: kramdown
 highlighter: rouge
 excerpt_separator: <!--MORE-->
 
